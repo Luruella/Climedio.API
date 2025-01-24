@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Climedio.Repositorio/1.0.0": {
+        "dependencies": {
+          "Climedio.Dominio": "1.0.0"
+        },
+        "runtime": {
+          "Climedio.Repositorio.dll": {}
+        }
+      },
+      "Climedio.Dominio/1.0.0": {
+        "runtime": {
+          "Climedio.Dominio.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Climedio.Repositorio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Climedio.Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
