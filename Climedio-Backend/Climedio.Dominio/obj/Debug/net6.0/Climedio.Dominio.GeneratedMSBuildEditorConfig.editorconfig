@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Climedio.Dominio
-build_property.ProjectDir = C:\Users\Noite\Desktop\Projeto_Climedio\Climedio-Backend\Climedio.Dominio\
+build_property.ProjectDir = C:\Users\Noite\Desktop\ProjetoClimedio\Climedio.API\Climedio-Backend\Climedio.Dominio\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

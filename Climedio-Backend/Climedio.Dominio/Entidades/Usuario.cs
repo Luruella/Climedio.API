@@ -70,8 +70,7 @@ public class Usuario
     {
         Ativo = true;
     }
-
-    
+   
 
     #endregion
 }

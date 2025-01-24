@@ -1,0 +1,12 @@
+C:\Users\Noite\Desktop\ProjetoClimedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao\bin\Debug\net8.0\Climedio.Aplicacao.deps.json
+C:\Users\Noite\Desktop\ProjetoClimedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao\bin\Debug\net8.0\Climedio.Aplicacao.dll
+C:\Users\Noite\Desktop\ProjetoClimedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao\bin\Debug\net8.0\Climedio.Aplicacao.pdb
+C:\Users\Noite\Desktop\ProjetoClimedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net8.0\Climedio.Aplicacao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Noite\Desktop\ProjetoClimedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net8.0\Climedio.Aplicacao.AssemblyInfoInputs.cache
+C:\Users\Noite\Desktop\ProjetoClimedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net8.0\Climedio.Aplicacao.AssemblyInfo.cs
+C:\Users\Noite\Desktop\ProjetoClimedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net8.0\Climedio.Aplicacao.csproj.CoreCompileInputs.cache
+C:\Users\Noite\Desktop\ProjetoClimedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net8.0\Climedio.Aplicacao.sourcelink.json
+C:\Users\Noite\Desktop\ProjetoClimedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net8.0\Climedio.Aplicacao.dll
+C:\Users\Noite\Desktop\ProjetoClimedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net8.0\refint\Climedio.Aplicacao.dll
+C:\Users\Noite\Desktop\ProjetoClimedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net8.0\Climedio.Aplicacao.pdb
+C:\Users\Noite\Desktop\ProjetoClimedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net8.0\ref\Climedio.Aplicacao.dll

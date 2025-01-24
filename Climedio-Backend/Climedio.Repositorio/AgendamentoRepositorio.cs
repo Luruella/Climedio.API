@@ -1,3 +1,4 @@
+// É o que conversa com o Banco de dados para fazer o crud
 
 using Climedio.Dominio.Entidades;
 using Microsoft.EntityFrameworkCore;
@@ -16,20 +17,19 @@ namespace Climedio.Repositorio
             await _contexto.SaveChangesAsync();
         }
 
-        public async Task<List<Agendamento>> Listar(int id)
+        public async Task<List<Agendamento>> ListarPorIdProfissional(int IdProfissional)
         {
-            return await _contexto.Agendamentos.Where(x => x.Id == id).ToListAsync();
+            return await _contexto.Agendamentos.Where(x => x.UsuarioIdProfissional == IdProfissional).ToListAsync();
         }
 
+        public async Task<List<Agendamento>> ListarPorIdPaciente(int IdPaciente)
+        {
+            return await _contexto.Agendamentos.Where(x => x.UsuarioIdPaciente == IdPaciente).ToListAsync();
+        }
         public async Task<Agendamento> ObterPorId(int id)
         {
             return await _contexto.Agendamentos.FirstOrDefaultAsync(x => x.Id == id);
         }
-
-        // public async Task<Agendamento> ObterPorNome(string nome)
-        // {
-        //     return await _contexto.Agendamentos.FirstOrDefaultAsync(x => x.Nome == nome);
-        // }
 
         public async Task Remover(Agendamento agendamento)
         {

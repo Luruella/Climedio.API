@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Climedio.Dominio", "Climedi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Climedio.Repositorio", "Climedio.Repositorio\Climedio.Repositorio.csproj", "{38C89E19-DCBE-4A64-83DF-35A83B8E86F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Climedio.Aplicacao", "Climedio.Aplicacao\Climedio.Aplicacao.csproj", "{48811973-B99B-497E-904D-7A2C503880B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{38C89E19-DCBE-4A64-83DF-35A83B8E86F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38C89E19-DCBE-4A64-83DF-35A83B8E86F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38C89E19-DCBE-4A64-83DF-35A83B8E86F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48811973-B99B-497E-904D-7A2C503880B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48811973-B99B-497E-904D-7A2C503880B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48811973-B99B-497E-904D-7A2C503880B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48811973-B99B-497E-904D-7A2C503880B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

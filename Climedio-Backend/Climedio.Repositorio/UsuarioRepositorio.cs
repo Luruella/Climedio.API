@@ -15,11 +15,6 @@ public class UsuarioRepositorio : BaseRepositorio, IUsuarioRepositorio
         await _contexto.SaveChangesAsync();
     }
 
-    public async Task<List<Usuario>> Listar()
-    {
-        return await _contexto.Usuarios.ToListAsync();
-    }
-
     public async Task<Usuario> ObterPorEmail(string email)
     {
         return await _contexto.Usuarios.FirstOrDefaultAsync(u => u.Email == email);
@@ -41,4 +36,10 @@ public class UsuarioRepositorio : BaseRepositorio, IUsuarioRepositorio
         _contexto.Usuarios.Add(usuario);
         await _contexto.SaveChangesAsync();
     }
+
+    public IEnumerable<Usuario> Listar(bool ativo)
+    {
+        return _contexto.Usuarios.Where(u => u.Ativo == ativo).ToList();
+    }
+
 }
