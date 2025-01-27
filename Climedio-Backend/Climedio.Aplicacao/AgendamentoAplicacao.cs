@@ -1,93 +1,99 @@
+using Climedio.Repositorio;
+using Climedio.Dominio.Entidades;
+
 namespace Climedio.Aplicacao;
-namespace Climedio.Dominio.Entidades;
-
-public class ProdutoAplicacao : IAgendamentoAplicacao
+public class AgendamentoAplicacao : IAgendamentoAplicacao
 {
-    private readonly IAgendaementoRepositorio _produtoRepositorio;
+    private readonly IAgendamentoRepositorio _agendamentoRepositorio;
 
-    public ProdutoAplicacao(IAgendamentoRepositorio agendaementoRepositorio)
+    public AgendamentoAplicacao(IAgendamentoRepositorio agendamentoRepositorio)
     {
-        _produtoRepositorio = agendaementoRepositorio;
+        _agendamentoRepositorio = agendamentoRepositorio;
     }
 
-    public async Task Atualizar(int produtoId, string nome, decimal preco, int quantidade)
+    public async Task Atualizar(DateTime DataHora, string observacao, decimal valor,
+    int UsuarioIdProfissional, int UsuarioIdPaciente)
     {
-        Agendamento agendamento = await _produtoRepositorio.ObterPorId(produtoId);
+        Agendamento agendamento = await _agendamentoRepositorio.ObterPorId(UsuarioIdProfissional);
+        _ = await _agendamentoRepositorio.ObterPorId(UsuarioIdPaciente);
 
         if (agendamento == null)
         {
-            throw new Exception("O produto não foi encontrado.");
+            throw new Exception("O Agendamento não foi encontrado.");
         }
 
-        agendamento.data_hora = nome;
-        agendamento.observacao = preco;
-        agendamento.Quantidade = quantidade;
+        agendamento.DataHora = DataHora;
+        agendamento.Observacao = observacao;
+        agendamento.Valor = valor;
+        agendamento.UsuarioIdProfissional = UsuarioIdProfissional;
+        agendamento.UsuarioIdPaciente = UsuarioIdPaciente;
 
-        VerificarProduto(agendamento);
 
-        await _produtoRepositorio.Atualizar(agendamento);
+        VerificarAgendamento(agendamento);
+
+        await _agendamentoRepositorio.Atualizar(agendamento);
     }
 
-    public async Task Criar(Agendamemento produto)
+    public async Task Criar(Agendamento agendamento)
     {
-        VerificarProduto(produto);
+        VerificarAgendamento(agendamento);
 
-        await _produtoRepositorio.Salvar(produto);
+        await _agendamentoRepositorio.Salvar(agendamento);
     }
 
-    public async Task<List<Produto>> Listar(int id, bool ativo)
+    public async Task<List<Agendamento>> Listar(int id, bool ativo)
     {
-        var lista = await _produtoRepositorio.Listar(id);
+        var lista = await _agendamentoRepositorio.Listar(id);
 
-        var listaProdutos = lista.Where(x => x.Ativo == ativo).ToList();
-        
-        if(listaProdutos.Count == 0)
+        var listaAgendamentos = lista.Where(x => x.Ativo == ativo).ToList();
+
+        if (listaAgendamentos.Count == 0)
         {
-            throw new Exception("Nenhum produto foi encontrado para a categoria.");
+            throw new Exception("Nenhum Agendamento foi encontrado.");
         }
 
-        return listaProdutos;
+        return listaAgendamentos;
     }
 
     public async Task Remover(int id)
     {
-        var produto = await _produtoRepositorio.ObterPorId(id);
+        var agendamento = await _agendamentoRepositorio.ObterPorId(id);
 
-        if (produto == null)
+        if (agendamento == null)
         {
-            throw new Exception("O produto não foi encontrado.");
+            throw new Exception("O Agendamento não foi encontrado.");
         }
 
-        produto.Ativo = false;
+        agendamento.Ativo = false;
 
-        await _produtoRepositorio.Atualizar(produto);
+        await _agendamentoRepositorio.Atualizar(agendamento);
     }
 
-    public void VerificarProduto(Produto produto)
+    public void VerificarAgendamento(Agendamento agendamento)
     {
-        if (produto == null)
+        if (agendamento == null)
         {
-            throw new Exception("O produto não pode ser vazio.");
+            throw new Exception("O agendamento não pode ser vazio.");
         }
 
-        if (string.IsNullOrWhiteSpace(produto.Nome))
+        if (agendamento.Id <= 0)
         {
-            throw new Exception("O nome do produto não pode ser vazio.");
+            throw new Exception("O paciente não pode ser vazio.");
         }
 
-        if (produto.Preco <= 0 )
+        if (agendamento.Valor <= 0)
         {
-            throw new Exception("O preço do produto não pode ser zero ou negativo.");
+            throw new Exception("O valor da consulta não pode ser negativo.");
         }
 
-        if (produto.Quantidade < 0)
+        if (agendamento.UsuarioIdPaciente <= 0)
         {
-            throw new Exception("A quantidade do produto não pode ser negativa.");
+            throw new Exception("O Paciente não pode ser vazio.");
         }
 
-        if (produto.CategoriaId <= 0)
+        if (agendamento.UsuarioIdProfissional <= 0)
         {
-            throw new Exception("O usuário do produto não pode ser vazio.");
+            throw new Exception("O Profissional não pode ser vazio.");
         }
     }
 }

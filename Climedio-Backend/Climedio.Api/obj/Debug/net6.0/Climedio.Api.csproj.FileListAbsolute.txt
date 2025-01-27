@@ -1,0 +1,8 @@
+C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Api\obj\Debug\net6.0\Climedio.Api.csproj.AssemblyReference.cache
+C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Api\obj\Debug\net6.0\Climedio.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Api\obj\Debug\net6.0\Climedio.Api.AssemblyInfoInputs.cache
+C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Api\obj\Debug\net6.0\Climedio.Api.AssemblyInfo.cs
+C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Api\obj\Debug\net6.0\Climedio.Api.csproj.CoreCompileInputs.cache
+C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Api\obj\Debug\net6.0\Climedio.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Api\obj\Debug\net6.0\Climedio.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Api\obj\Debug\net6.0\Climedio.Api.sourcelink.json

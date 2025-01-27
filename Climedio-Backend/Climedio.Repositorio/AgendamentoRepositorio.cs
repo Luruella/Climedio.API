@@ -6,9 +6,17 @@ using Microsoft.EntityFrameworkCore;
 namespace Climedio.Repositorio
 {
     public class AgendamentoRepositorio : BaseRepositorio, IAgendamentoRepositorio
+
     {
+
+
         public AgendamentoRepositorio(ClimedioContexto _contexto) : base(_contexto)
         {
+        }
+
+        public async Task<IEnumerable<Agendamento>> Listar(int id)
+        {
+            return await _contexto.Agendamentos.Where(a => a.UsuarioIdPaciente == id).ToListAsync();
         }
 
         public async Task Atualizar(Agendamento agendamento)

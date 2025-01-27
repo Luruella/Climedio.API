@@ -5,6 +5,7 @@ namespace Climedio.Repositorio;
 
 public class UsuarioRepositorio : BaseRepositorio, IUsuarioRepositorio
 {
+
     public UsuarioRepositorio(ClimedioContexto contexto) : base(contexto)
     {
     }
@@ -37,9 +38,9 @@ public class UsuarioRepositorio : BaseRepositorio, IUsuarioRepositorio
         await _contexto.SaveChangesAsync();
     }
 
-    public IEnumerable<Usuario> Listar(bool ativo)
+    public async Task<IEnumerable<Usuario>> Listar(bool ativo)
     {
-        return _contexto.Usuarios.Where(u => u.Ativo == ativo).ToList();
+        return await _contexto.Usuarios.Where(u => u.Ativo == ativo).ToListAsync();
     }
 
 }

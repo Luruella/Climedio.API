@@ -6,8 +6,9 @@ namespace Climedio.Dominio.Enumeradores
         Dentista = 2,
         Enfermeiro = 3,
         Esteticista = 4,
-        Secretaria = 5,
+        Administrador = 5,
         Paciente = 6,
+        Secretária =7,
 
     }
 }

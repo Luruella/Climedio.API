@@ -1,4 +1,4 @@
-using Climedio.Aplicacao;
+using Climedio.Dominio.Entidades;
 
 namespace Climedio.Aplicacao;
 

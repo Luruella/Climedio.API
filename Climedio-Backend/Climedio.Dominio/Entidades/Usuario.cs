@@ -13,6 +13,7 @@ public class Usuario
 
 
     private string _nome;
+    private string _nomeSocial;
     private string _telefone;
     private string _endereco;
     private DateTime _dataNascimento;
@@ -35,6 +36,7 @@ public class Usuario
     public string Senha { get; set; }
 
     public string Nome { get; set; }
+    public string NomeSocial { get; set; }
 
     public string Telefone { get; set; }
 

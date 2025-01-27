@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Noite\\Desktop\\ProjetoClimedio\\Climedio.API\\Climedio-Backend\\Climedio.Dominio\\Climedio.Dominio.csproj": {}
+    "C:\\Users\\Noite\\Desktop\\Climedio\\Climedio.API\\Climedio-Backend\\Climedio.Dominio\\Climedio.Dominio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Noite\\Desktop\\ProjetoClimedio\\Climedio.API\\Climedio-Backend\\Climedio.Dominio\\Climedio.Dominio.csproj": {
+    "C:\\Users\\Noite\\Desktop\\Climedio\\Climedio.API\\Climedio-Backend\\Climedio.Dominio\\Climedio.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Noite\\Desktop\\ProjetoClimedio\\Climedio.API\\Climedio-Backend\\Climedio.Dominio\\Climedio.Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\Noite\\Desktop\\Climedio\\Climedio.API\\Climedio-Backend\\Climedio.Dominio\\Climedio.Dominio.csproj",
         "projectName": "Climedio.Dominio",
-        "projectPath": "C:\\Users\\Noite\\Desktop\\ProjetoClimedio\\Climedio.API\\Climedio-Backend\\Climedio.Dominio\\Climedio.Dominio.csproj",
+        "projectPath": "C:\\Users\\Noite\\Desktop\\Climedio\\Climedio.API\\Climedio-Backend\\Climedio.Dominio\\Climedio.Dominio.csproj",
         "packagesPath": "C:\\Users\\Noite\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Noite\\Desktop\\ProjetoClimedio\\Climedio.API\\Climedio-Backend\\Climedio.Dominio\\obj\\",
+        "outputPath": "C:\\Users\\Noite\\Desktop\\Climedio\\Climedio.API\\Climedio-Backend\\Climedio.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Noite\\AppData\\Roaming\\NuGet\\NuGet.Config",
