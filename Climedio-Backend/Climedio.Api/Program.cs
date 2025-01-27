@@ -1,12 +1,17 @@
 using GerenciarEstoque.Aplicacao;
 using GerenciarEstoque.Repositorio;
 using Microsoft.EntityFrameworkCore;
+using Climedio.Repositorio
 
 
 var builder = WebApplication.CreateBuilder(args);
 
 //Adicione serviços ao conteiner
 builder.Services.AddControllers();
+
+builder.Services.AddDbContext<IUsuarioAplicacao, UsuarioAplicacao>();
+
+builder.Services.AddDbContext<IUsuarioRepositorio, UsuarioRepositorio>();
 
 //Adicione serviços ao banco de dados
 builder.Services.AddDbContext<ClimedioContexto>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
