@@ -2,7 +2,6 @@ namespace Climedio.Api.Models.Agendamento.Request;
 
 public class AdicionarAgendamentoRequest
 {
-    public string Nome { get; set; }
     public int UsuarioIdProfissional { get; set; }
     public int UsuarioIdPaciente { get; set; }
     public decimal Valor { get; set; }

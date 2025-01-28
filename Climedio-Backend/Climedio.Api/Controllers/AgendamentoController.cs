@@ -23,9 +23,14 @@ public class AgendamentoController : ControllerBase
     {
         try
         {
-            Agendamento agendamento = new Agendamento(agendamentoRequest.Nome,
-            agendamentoRequest._data_hora, agendamentoRequest.Observacao, agendamentoRequest.Valor,
-            agendamentoRequest.UsuarioIdProfissional, agendamentoRequest.UsuarioIdPaciente);
+            Agendamento agendamento = new Agendamento()
+            {
+                DataHora = agendamentoRequest._data_hora,
+                Observacao = agendamentoRequest.Observacao,
+                Valor = agendamentoRequest.Valor,
+                UsuarioIdProfissional = agendamentoRequest.UsuarioIdProfissional,
+                UsuarioIdPaciente = agendamentoRequest.UsuarioIdPaciente
+            };
 
             await _agendamentoAplicacao.Criar(agendamento);
 
@@ -44,9 +49,9 @@ public class AgendamentoController : ControllerBase
     {
         try
         {
-            await _agendamentoAplicacao.Atualizar(agendamentoRequest.Data_hora, agendamentoRequest.Observacao, 
-            agendamentoRequest.Valor, agendamentoRequest.UsuarioIdProfissional,  agendamentoRequest.UsuarioIdPaciente);
-    
+            await _agendamentoAplicacao.Atualizar(agendamentoRequest.Data_hora, agendamentoRequest.Observacao,
+            agendamentoRequest.Valor, agendamentoRequest.UsuarioIdProfissional, agendamentoRequest.UsuarioIdPaciente);
+
 
             return Ok();
         }
