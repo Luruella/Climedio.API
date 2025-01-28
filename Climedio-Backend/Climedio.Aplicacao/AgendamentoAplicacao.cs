@@ -55,6 +55,11 @@ public class AgendamentoAplicacao : IAgendamentoAplicacao
         return listaAgendamentos;
     }
 
+    public Task<IEnumerable<object>> ObterAgendamentosPorUsuarioId(int usuarioId)
+    {
+        throw new NotImplementedException();
+    }
+
     public async Task Remover(int id)
     {
         var agendamento = await _agendamentoRepositorio.ObterPorId(id);

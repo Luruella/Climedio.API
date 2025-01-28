@@ -1,28 +1,30 @@
-using GerenciarEstoque.Aplicacao;
-using GerenciarEstoque.Repositorio;
+using Climedio.Repositorio;
+using Climedio.Aplicacao;
 using Microsoft.EntityFrameworkCore;
-using Climedio.Repositorio
-
 
 var builder = WebApplication.CreateBuilder(args);
 
-//Adicione serviços ao conteiner
+// Adicione serviços ao contêiner
 builder.Services.AddControllers();
 
-builder.Services.AddDbContext<IUsuarioAplicacao, UsuarioAplicacao>();
+// Adicione o DbContext, que deve ser sua classe que herda de DbContext (ClimedioContexto)
+builder.Services.AddDbContext<ClimedioContexto>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddDbContext<IUsuarioRepositorio, UsuarioRepositorio>();
+// Registre as interfaces e implementações
+builder.Services.AddScoped<IUsuarioAplicacao, UsuarioAplicacao>();
+builder.Services.AddScoped<IAgendamentoAplicacao, AgendamentoAplicacao>();
 
-//Adicione serviços ao banco de dados
-builder.Services.AddDbContext<ClimedioContexto>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
+builder.Services.AddScoped<IAgendamentoRepositorio, AgendamentoRepositorio>();
 
-//configuraçoes swagger/openApi em http:aka.ms/aspnetcore/swashbuckle
+// Configurações Swagger/OpenAPI
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configure o pipeline de requisições HTTP
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -38,27 +40,14 @@ app.MapControllers();
 
 app.Run();
 
-
-
+// Configurações CORS
 builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder =>
     {
-        options.AddDefaultPolicy(builder =>
-        {
-            builder.WithOrigins("http://localhost:3000")
-                .SetIsOriginAllowedToAllowWildcardSubdomains()
-                .AllowAnyHeader()
-                .AllowAnyMethod();
-        });
+        builder.WithOrigins("http://localhost:3000")
+               .SetIsOriginAllowedToAllowWildcardSubdomains()
+               .AllowAnyHeader()
+               .AllowAnyMethod();
     });
-
-builder.Services.AddScoped<IUsuarioAplicacao, UsuarioAplicacao>();
-builder.Services.AddScoped<IAgendamentoAplicacao, AgendamentoAplicacao>();
-
-builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
-builder.Services.AddScoped<IAgendamentoRepositorio, AgendamentoRepositorio>();
-
-
-
-
-
-
+});

@@ -31,10 +31,10 @@ namespace Climedio.Repositorio
 
             builder.Property(nameof(Agendamento.Ativo)).HasColumnName("Ativo").IsRequired();
 
-            builder.HasOne(a => a.UsuarioProfissional).WithMany(u => u.Agendamentos) // Um Usuario pode ter vários Agendamentos
+            builder.HasOne(a => a.UsuarioProfissional).WithMany(u => u.AgendamentosProfissional) // Um Usuario pode ter vários Agendamentos
             .HasForeignKey(x => x.UsuarioIdProfissional).OnDelete(DeleteBehavior.NoAction);
 
-            builder.HasOne(a => a.UsuarioPaciente).WithMany(u => u.Agendamentos) // Um Usuario pode ter vários Agendamentos
+            builder.HasOne(a => a.UsuarioPaciente).WithMany(u => u.AgendamentosPaciente) // Um Usuario pode ter vários Agendamentos
             .HasForeignKey(x => x.UsuarioIdPaciente).OnDelete(DeleteBehavior.NoAction);
 
         }

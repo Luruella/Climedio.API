@@ -12,6 +12,7 @@ namespace Climedio.Dominio.Entidades
         private int _usuarioIdProfissional;
         private int _usuarioIdPaciente;
         private bool _ativo;
+       
 
         #endregion
 
@@ -39,7 +40,8 @@ namespace Climedio.Dominio.Entidades
 
 
         #region Construtores
-        public Agendamento(){}
+        public Agendamento() {Ativo = true;}
+
         #endregion
 
 

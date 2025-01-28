@@ -4,3 +4,15 @@ C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao
 C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net6.0\Climedio.Aplicacao.AssemblyInfo.cs
 C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net6.0\Climedio.Aplicacao.csproj.CoreCompileInputs.cache
 C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net6.0\Climedio.Aplicacao.sourcelink.json
+C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao\bin\Debug\net6.0\Climedio.Aplicacao.deps.json
+C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao\bin\Debug\net6.0\Climedio.Aplicacao.dll
+C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao\bin\Debug\net6.0\Climedio.Aplicacao.pdb
+C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao\bin\Debug\net6.0\Climedio.Dominio.dll
+C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao\bin\Debug\net6.0\Climedio.Repositorio.dll
+C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao\bin\Debug\net6.0\Climedio.Repositorio.pdb
+C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao\bin\Debug\net6.0\Climedio.Dominio.pdb
+C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net6.0\Climedio.41F1C2A5.Up2Date
+C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net6.0\Climedio.Aplicacao.dll
+C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net6.0\refint\Climedio.Aplicacao.dll
+C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net6.0\Climedio.Aplicacao.pdb
+C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net6.0\ref\Climedio.Aplicacao.dll

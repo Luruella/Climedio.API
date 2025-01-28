@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Climedio.Dominio.Entidades;
 
+
 namespace Climedio.Repositorio;
 public class ClimedioContexto : DbContext
 {
@@ -9,13 +10,12 @@ public class ClimedioContexto : DbContext
 
     public readonly DbContextOptions _options;
 
-    public ClimedioContexto(DbContextOptions options)
+   public ClimedioContexto() : base(new DbContextOptions<ClimedioContexto>())
     {
-        _options = options;
     }
-    public ClimedioContexto()
-    {
 
+    public ClimedioContexto(DbContextOptions<ClimedioContexto> options) : base(options)
+    {
     }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

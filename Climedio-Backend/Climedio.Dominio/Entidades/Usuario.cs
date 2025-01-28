@@ -21,6 +21,7 @@ public class Usuario
 
     private TipoUsuario tipoUsuarioId;
     private bool _ativo;
+    private DateOnly dateOnly;
 
 
     #endregion
@@ -48,16 +49,25 @@ public class Usuario
 
     public bool Ativo { get; set; }
 
-    public List<Agendamento> Agendamentos{get; set;}
+    public List<Agendamento> AgendamentosProfissional {get; set;}
+    public List<Agendamento> AgendamentosPaciente { get; set;}
 
 
     #endregion
 
     #region Construtores
 
-    public Usuario()
+    public Usuario(string nome)
     {
         Ativo = true;
+        Nome = nome;
+    }
+
+    public Usuario(string nome, string email, DateOnly dateOnly, string senha) : this(nome)
+    {
+        Email = email;
+        this.dateOnly = dateOnly;
+        Senha = senha;
     }
 
     #endregion

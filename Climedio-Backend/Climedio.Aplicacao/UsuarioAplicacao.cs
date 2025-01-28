@@ -21,11 +21,12 @@ public class UsuarioAplicacao : IUsuarioAplicacao
             throw new Exception("Senha do usuário não pode ser vazia.");
         }
 
-        if(usuarioAtualizar.VerificarSenha(senhaAntiga)){
+        if((usuarioAtualizar.Senha == senhaAntiga))
+        {
             throw new Exception("Senha antiga inválida.");
         }
 
-        usuarioAtualizar.AlterarSenha(senhaNova);
+        usuarioAtualizar.Senha = senhaNova;
 
         await _usuarioRepositorio.Atualizar(usuarioAtualizar);
     }
@@ -79,6 +80,11 @@ public class UsuarioAplicacao : IUsuarioAplicacao
         await _usuarioRepositorio.Atualizar(usuario);
     }
 
+    public Task<int> ValidarCPF(string cpf, string senha)
+    {
+        throw new NotImplementedException();
+    }
+
     public async Task<int> ValidarLogin(string email, string senha)
     {
         var usuario = await _usuarioRepositorio.ObterPorEmail(email);
@@ -88,11 +94,13 @@ public class UsuarioAplicacao : IUsuarioAplicacao
             throw new Exception("Usuario não encontrado");
         }
 
-        if (!usuario.VerificarSenha(senha))
+        if (usuario.Senha!= senha)
         {
             throw new Exception("Senha incorreta");
         }
 
         return usuario.Id;
+
+       
     }
 }
