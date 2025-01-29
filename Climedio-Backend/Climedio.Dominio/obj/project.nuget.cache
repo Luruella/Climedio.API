@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ITMxV1hs6p0=",
+  "dgSpecHash": "dUKj+MN1cwM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Noite\\Desktop\\Climedio\\Climedio.API\\Climedio-Backend\\Climedio.Dominio\\Climedio.Dominio.csproj",
+  "projectFilePath": "C:\\Users\\Noite\\Desktop\\Climedio.API\\Climedio-Backend\\Climedio.Dominio\\Climedio.Dominio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Noite\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
     "C:\\Users\\Noite\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",

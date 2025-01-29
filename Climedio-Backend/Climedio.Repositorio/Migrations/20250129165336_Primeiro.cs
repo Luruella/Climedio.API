@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Climedio.Repositorio.Migrations
 {
-    public partial class primeiro : Migration
+    public partial class Primeiro : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

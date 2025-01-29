@@ -10,7 +10,7 @@ public class ClimedioContexto : DbContext
 
     public readonly DbContextOptions _options;
 
-   public ClimedioContexto() : base(new DbContextOptions<ClimedioContexto>())
+    public ClimedioContexto() : base(new DbContextOptions<ClimedioContexto>())
     {
     }
 
@@ -19,7 +19,7 @@ public class ClimedioContexto : DbContext
     }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlite(@"Filename=./Climedio.sqlite;");
+        optionsBuilder.UseSqlite(@"Filename=C:\Users\Noite\Desktop\Climedio.API\Climedio-Backend\Climedio.Repositorio\Climedio.sqlite");
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -27,5 +27,4 @@ public class ClimedioContexto : DbContext
         modelBuilder.ApplyConfiguration(new AgendamentoConfiguracoes());
         modelBuilder.ApplyConfiguration(new UsuarioConfiguracoes());
     }
-
 }

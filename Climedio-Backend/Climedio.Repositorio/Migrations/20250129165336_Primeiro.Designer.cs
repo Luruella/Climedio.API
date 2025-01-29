@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Climedio.Repositorio.Migrations
 {
     [DbContext(typeof(ClimedioContexto))]
-    [Migration("20250128204033_primeiro")]
-    partial class primeiro
+    [Migration("20250129165336_Primeiro")]
+    partial class Primeiro
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

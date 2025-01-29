@@ -2457,11 +2457,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Noite\\Desktop\\Climedio\\Climedio.API\\Climedio-Backend\\Climedio.Aplicacao\\Climedio.Aplicacao.csproj",
+      "projectUniqueName": "C:\\Users\\Noite\\Desktop\\Climedio.API\\Climedio-Backend\\Climedio.Aplicacao\\Climedio.Aplicacao.csproj",
       "projectName": "Climedio.Aplicacao",
-      "projectPath": "C:\\Users\\Noite\\Desktop\\Climedio\\Climedio.API\\Climedio-Backend\\Climedio.Aplicacao\\Climedio.Aplicacao.csproj",
+      "projectPath": "C:\\Users\\Noite\\Desktop\\Climedio.API\\Climedio-Backend\\Climedio.Aplicacao\\Climedio.Aplicacao.csproj",
       "packagesPath": "C:\\Users\\Noite\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Noite\\Desktop\\Climedio\\Climedio.API\\Climedio-Backend\\Climedio.Aplicacao\\obj\\",
+      "outputPath": "C:\\Users\\Noite\\Desktop\\Climedio.API\\Climedio-Backend\\Climedio.Aplicacao\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Noite\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2478,8 +2478,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Noite\\Desktop\\Climedio\\Climedio.API\\Climedio-Backend\\Climedio.Repositorio\\Climedio.Repositorio.csproj": {
-              "projectPath": "C:\\Users\\Noite\\Desktop\\Climedio\\Climedio.API\\Climedio-Backend\\Climedio.Repositorio\\Climedio.Repositorio.csproj"
+            "C:\\Users\\Noite\\Desktop\\Climedio.API\\Climedio-Backend\\Climedio.Repositorio\\Climedio.Repositorio.csproj": {
+              "projectPath": "C:\\Users\\Noite\\Desktop\\Climedio.API\\Climedio-Backend\\Climedio.Repositorio\\Climedio.Repositorio.csproj"
             }
           }
         }

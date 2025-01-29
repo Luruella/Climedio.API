@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GfMZBl2/baI=",
+  "dgSpecHash": "TQMzq1vbAuM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Noite\\Desktop\\Climedio\\Climedio.API\\Climedio-Backend\\Climedio.Aplicacao\\Climedio.Aplicacao.csproj",
+  "projectFilePath": "C:\\Users\\Noite\\Desktop\\Climedio.API\\Climedio-Backend\\Climedio.Aplicacao\\Climedio.Aplicacao.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Noite\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Noite\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

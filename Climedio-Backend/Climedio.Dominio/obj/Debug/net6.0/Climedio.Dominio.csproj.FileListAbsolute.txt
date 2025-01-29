@@ -33,3 +33,15 @@ C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Dominio\o
 C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Dominio\obj\Debug\net6.0\refint\Climedio.Dominio.dll
 C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Dominio\obj\Debug\net6.0\Climedio.Dominio.pdb
 C:\Users\Noite\Desktop\Climedio\Climedio.API\Climedio-Backend\Climedio.Dominio\obj\Debug\net6.0\ref\Climedio.Dominio.dll
+C:\Users\Noite\Desktop\Climedio.API\Climedio-Backend\Climedio.Dominio\bin\Debug\net6.0\Climedio.Dominio.deps.json
+C:\Users\Noite\Desktop\Climedio.API\Climedio-Backend\Climedio.Dominio\bin\Debug\net6.0\Climedio.Dominio.dll
+C:\Users\Noite\Desktop\Climedio.API\Climedio-Backend\Climedio.Dominio\bin\Debug\net6.0\Climedio.Dominio.pdb
+C:\Users\Noite\Desktop\Climedio.API\Climedio-Backend\Climedio.Dominio\obj\Debug\net6.0\Climedio.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Noite\Desktop\Climedio.API\Climedio-Backend\Climedio.Dominio\obj\Debug\net6.0\Climedio.Dominio.AssemblyInfoInputs.cache
+C:\Users\Noite\Desktop\Climedio.API\Climedio-Backend\Climedio.Dominio\obj\Debug\net6.0\Climedio.Dominio.AssemblyInfo.cs
+C:\Users\Noite\Desktop\Climedio.API\Climedio-Backend\Climedio.Dominio\obj\Debug\net6.0\Climedio.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Noite\Desktop\Climedio.API\Climedio-Backend\Climedio.Dominio\obj\Debug\net6.0\Climedio.Dominio.sourcelink.json
+C:\Users\Noite\Desktop\Climedio.API\Climedio-Backend\Climedio.Dominio\obj\Debug\net6.0\Climedio.Dominio.dll
+C:\Users\Noite\Desktop\Climedio.API\Climedio-Backend\Climedio.Dominio\obj\Debug\net6.0\refint\Climedio.Dominio.dll
+C:\Users\Noite\Desktop\Climedio.API\Climedio-Backend\Climedio.Dominio\obj\Debug\net6.0\Climedio.Dominio.pdb
+C:\Users\Noite\Desktop\Climedio.API\Climedio-Backend\Climedio.Dominio\obj\Debug\net6.0\ref\Climedio.Dominio.dll
