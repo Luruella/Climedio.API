@@ -61,6 +61,11 @@ public class UsuarioAplicacao : IUsuarioAplicacao
         await _usuarioRepositorio.Salvar(usuario);
     }
 
+    public async Task<List<Usuario>> ListarUsuarios()
+    {
+        return await _usuarioRepositorio.ListarUsuarios();
+    }
+
     public async Task<Usuario> ObterUsuario(int id)
     {
         return await _usuarioRepositorio.ObterPorId(id);

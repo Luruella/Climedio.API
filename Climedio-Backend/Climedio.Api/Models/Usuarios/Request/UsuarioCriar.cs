@@ -1,7 +1,10 @@
+using Climedio.Dominio.Enumeradores;
+
 namespace Climedio.Api.Models.Usuarios.Request;
 
 public class UsuarioCriarRequest
 {
+    public TipoUsuario TipoUsuario {get;set;}
     public string Email { get; set; }
     public string Cpf { get; set; }
     public string Senha { get; set; }

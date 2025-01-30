@@ -2,6 +2,7 @@ using Climedio.Api.Models.Usuarios.Request;
 using Climedio.Api.Models.Usuarios.Response;
 using Climedio.Aplicacao;
 using Climedio.Dominio.Entidades;
+using Climedio.Dominio.Enumeradores;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Climedio.Api.Controllers;
@@ -23,9 +24,20 @@ public class UsuarioController : ControllerBase
     {
         try
         {
-            Usuario usuario = new(usuarioCriarRequest.Nome, usuarioCriarRequest.Email, 
-            DateOnly.FromDateTime(usuarioCriarRequest.DataNascimento), usuarioCriarRequest.Senha);
-
+            Usuario usuario = new Usuario(
+            usuarioCriarRequest.Nome,
+            usuarioCriarRequest.Email,
+            DateOnly.FromDateTime(usuarioCriarRequest.DataNascimento),
+            usuarioCriarRequest.Senha
+        )
+            {
+                Cpf = usuarioCriarRequest.Cpf,
+                NomeSocial = usuarioCriarRequest.NomeSocial,
+                Telefone = usuarioCriarRequest.Telefone,
+                Endereco = usuarioCriarRequest.Endereco,
+                TipoUsuarioId = usuarioCriarRequest.TipoUsuario,
+                Ativo = true
+            };
             await _usuarioAplicacao.Criar(usuario);
 
             return Ok();
@@ -99,6 +111,49 @@ public class UsuarioController : ControllerBase
             usuario.DataNascimento = usuarioTeste.DataNascimento;
 
             return Ok(usuario);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+
+    [HttpGet]
+    [Route("ListarUsuarios")]
+    public async Task<IActionResult> ListarUsuarios()
+    {
+        try
+        {
+            var usuarios = await _usuarioAplicacao.ListarUsuarios();
+
+            var usuariosResponse = usuarios.Select(usuario => new ListarUsuariosResponse
+            {
+                UsuarioId = usuario.Id,
+                Nome = usuario.Nome,
+                Email = usuario.Email,
+                TipoUsuario = usuario.TipoUsuarioId.ToString()
+            }).ToList();
+
+            return Ok(usuariosResponse);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+
+    [HttpGet]
+    [Route("ListarTiposUsuario")]
+    public IActionResult ListarTiposUsuario()
+    {
+        try
+        {
+            List<string> tiposUsuario = Enum.GetValues(typeof(TipoUsuario))
+                                        .Cast<TipoUsuario>()
+                                        .Select(tipo => tipo.ToString())
+                                        .ToList();
+
+            return Ok(tiposUsuario);
         }
         catch (Exception ex)
         {

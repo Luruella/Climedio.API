@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Climedio.Repositorio.Migrations
 {
-    public partial class Primeiro : Migration
+    public partial class NomeDaMigracao : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -23,7 +23,7 @@ namespace Climedio.Repositorio.Migrations
                     Telefone = table.Column<string>(type: "TEXT", nullable: true),
                     Endereco = table.Column<string>(type: "TEXT", nullable: true),
                     DataNascimento = table.Column<DateTime>(type: "date", nullable: false),
-                    TipoUsuarioId = table.Column<int>(type: "INTEGER", nullable: false),
+                    TipoUsuario = table.Column<int>(type: "INTEGER", nullable: false),
                     Ativo = table.Column<bool>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>

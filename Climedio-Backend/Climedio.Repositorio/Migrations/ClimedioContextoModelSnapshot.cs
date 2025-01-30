@@ -103,7 +103,8 @@ namespace Climedio.Repositorio.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<int>("TipoUsuarioId")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("TipoUsuario");
 
                     b.HasKey("Id");
 

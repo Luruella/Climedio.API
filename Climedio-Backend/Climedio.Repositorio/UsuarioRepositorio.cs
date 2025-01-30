@@ -43,4 +43,8 @@ public class UsuarioRepositorio : BaseRepositorio, IUsuarioRepositorio
         return await _contexto.Usuarios.Where(u => u.Ativo == ativo).ToListAsync();
     }
 
+    public async Task<List<Usuario>> ListarUsuarios()
+    {
+        return await _contexto.Usuarios.Where(u => u.Ativo == true).ToListAsync();
+    }
 }

@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Climedio.Repositorio.Migrations
 {
     [DbContext(typeof(ClimedioContexto))]
-    [Migration("20250129165336_Primeiro")]
-    partial class Primeiro
+    [Migration("20250130192819_NomeDaMigracao")]
+    partial class NomeDaMigracao
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -105,7 +105,8 @@ namespace Climedio.Repositorio.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<int>("TipoUsuarioId")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("TipoUsuario");
 
                     b.HasKey("Id");
 

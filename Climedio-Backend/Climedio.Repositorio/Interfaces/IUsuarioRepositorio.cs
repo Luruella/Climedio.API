@@ -11,4 +11,5 @@ public interface IUsuarioRepositorio
     Task<Usuario> ObterPorId(int id);
     Task<Usuario> ObterPorEmail(string email);
     Task<IEnumerable<Usuario>> Listar(bool ativo);
+    Task<List<Usuario>> ListarUsuarios();
 }

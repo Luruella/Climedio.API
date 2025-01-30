@@ -12,5 +12,6 @@ public interface IUsuarioAplicacao
     Task<int> ValidarLogin(string email, string senha);
      Task<int> ValidarCPF(string cpf, string senha);
     Task<Usuario> ObterUsuario(int id);
+    Task<List<Usuario>> ListarUsuarios();
 }
 
