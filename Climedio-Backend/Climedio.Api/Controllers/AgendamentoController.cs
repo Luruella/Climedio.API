@@ -25,7 +25,7 @@ public class AgendamentoController : ControllerBase
         {
             Agendamento agendamento = new Agendamento()
             {
-                DataHora = agendamentoRequest._data_hora,
+                DataHora = agendamentoRequest.DataHora,
                 Observacao = agendamentoRequest.Observacao,
                 Valor = agendamentoRequest.Valor,
                 UsuarioIdProfissional = agendamentoRequest.UsuarioIdProfissional,

@@ -5,6 +5,6 @@ public class AdicionarAgendamentoRequest
     public int UsuarioIdProfissional { get; set; }
     public int UsuarioIdPaciente { get; set; }
     public decimal Valor { get; set; }
-    public DateTime _data_hora { get; set; }
+    public DateTime DataHora { get; set; }
     public string Observacao { get; set; }
 }

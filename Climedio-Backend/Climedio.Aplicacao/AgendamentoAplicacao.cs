@@ -81,22 +81,17 @@ public class AgendamentoAplicacao : IAgendamentoAplicacao
             throw new Exception("O agendamento não pode ser vazio.");
         }
 
-        if (agendamento.Id <= 0)
-        {
-            throw new Exception("O paciente não pode ser vazio.");
-        }
-
         if (agendamento.Valor <= 0)
         {
             throw new Exception("O valor da consulta não pode ser negativo.");
         }
 
-        if (agendamento.UsuarioIdPaciente <= 0)
+        if (agendamento.UsuarioIdPaciente < 0)
         {
             throw new Exception("O Paciente não pode ser vazio.");
         }
 
-        if (agendamento.UsuarioIdProfissional <= 0)
+        if (agendamento.UsuarioIdProfissional < 0)
         {
             throw new Exception("O Profissional não pode ser vazio.");
         }

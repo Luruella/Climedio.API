@@ -21,7 +21,7 @@ public class UsuarioAplicacao : IUsuarioAplicacao
             throw new Exception("Senha do usuário não pode ser vazia.");
         }
 
-        if((usuarioAtualizar.Senha == senhaAntiga))
+        if (usuarioAtualizar.Senha == senhaAntiga)
         {
             throw new Exception("Senha antiga inválida.");
         }
@@ -30,6 +30,7 @@ public class UsuarioAplicacao : IUsuarioAplicacao
 
         await _usuarioRepositorio.Atualizar(usuarioAtualizar);
     }
+
 
     public async Task Criar(Usuario usuario)
     {
@@ -61,15 +62,30 @@ public class UsuarioAplicacao : IUsuarioAplicacao
         await _usuarioRepositorio.Salvar(usuario);
     }
 
+
     public async Task<List<Usuario>> ListarUsuarios()
     {
         return await _usuarioRepositorio.ListarUsuarios();
     }
 
+
+    public async Task<IEnumerable<Usuario>> ListarPacientes(bool ativo)
+    {
+        return await _usuarioRepositorio.ListarPacientes(ativo);
+    }
+
+
+    public async Task<IEnumerable<Usuario>> ListarProfissionais(bool ativo)
+    {
+        return await _usuarioRepositorio.ListarProfissionais(ativo);
+    }
+
+
     public async Task<Usuario> ObterUsuario(int id)
     {
         return await _usuarioRepositorio.ObterPorId(id);
     }
+
 
     public async Task Remover(int id)
     {
@@ -85,10 +101,12 @@ public class UsuarioAplicacao : IUsuarioAplicacao
         await _usuarioRepositorio.Atualizar(usuario);
     }
 
+
     public Task<int> ValidarCPF(string cpf, string senha)
     {
         throw new NotImplementedException();
     }
+
 
     public async Task<int> ValidarLogin(string email, string senha)
     {
@@ -99,13 +117,13 @@ public class UsuarioAplicacao : IUsuarioAplicacao
             throw new Exception("Usuario não encontrado");
         }
 
-        if (usuario.Senha!= senha)
+        if (usuario.Senha != senha)
         {
             throw new Exception("Senha incorreta");
         }
 
         return usuario.Id;
 
-       
+
     }
 }

@@ -13,5 +13,7 @@ public interface IUsuarioAplicacao
      Task<int> ValidarCPF(string cpf, string senha);
     Task<Usuario> ObterUsuario(int id);
     Task<List<Usuario>> ListarUsuarios();
+    Task<IEnumerable<Usuario>> ListarPacientes(bool ativo);
+    Task<IEnumerable<Usuario>> ListarProfissionais(bool ativo);
 }
 

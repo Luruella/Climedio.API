@@ -143,15 +143,65 @@ public class UsuarioController : ControllerBase
     }
 
     [HttpGet]
+    [Route("ListarUsuariosPacientes")]
+    public async Task<IActionResult> ListarPacientes()
+    {
+        try
+        {
+            var usuarios = await _usuarioAplicacao.ListarPacientes(true);
+
+            var usuariosResponse = usuarios.Select(usuario => new ListarUsuariosResponse
+            {
+                UsuarioId = usuario.Id,
+                Nome = usuario.Nome,
+                Email = usuario.Email,
+                TipoUsuario = usuario.TipoUsuarioId.ToString()
+            }).ToList();
+            return Ok(usuariosResponse);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+
+    [HttpGet]
+    [Route("ListarUsuariosProfissional")]
+    public async Task<IActionResult> ListarProfissionais()
+    {
+        try
+        {
+            var usuarios = await _usuarioAplicacao.ListarProfissionais(true);
+
+            var usuariosResponse = usuarios.Select(usuario => new ListarUsuariosResponse
+            {
+                UsuarioId = usuario.Id,
+                Nome = usuario.Nome,
+                Email = usuario.Email,
+                TipoUsuario = usuario.TipoUsuarioId.ToString()
+            }).ToList();
+            return Ok(usuariosResponse);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+
+    [HttpGet]
     [Route("ListarTiposUsuario")]
     public IActionResult ListarTiposUsuario()
     {
         try
         {
-            List<string> tiposUsuario = Enum.GetValues(typeof(TipoUsuario))
-                                        .Cast<TipoUsuario>()
-                                        .Select(tipo => tipo.ToString())
-                                        .ToList();
+            var tiposUsuario = Enum.GetValues(typeof(TipoUsuario))
+                                .Cast<TipoUsuario>()
+                                .Select(tipo => new
+                                {
+                                    Key = (int)tipo,
+                                    Value = tipo.ToString()
+                                })
+                                .ToList();
 
             return Ok(tiposUsuario);
         }

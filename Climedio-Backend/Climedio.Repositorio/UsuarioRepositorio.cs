@@ -42,6 +42,15 @@ public class UsuarioRepositorio : BaseRepositorio, IUsuarioRepositorio
     {
         return await _contexto.Usuarios.Where(u => u.Ativo == ativo).ToListAsync();
     }
+    public async Task<IEnumerable<Usuario>> ListarPacientes(bool ativo)
+    {
+        return await _contexto.Usuarios.Where(u => u.Ativo == ativo && u.TipoUsuarioId == Dominio.Enumeradores.TipoUsuario.Paciente).ToListAsync();
+    }
+    public async Task<IEnumerable<Usuario>> ListarProfissionais(bool ativo)
+    {
+        return await _contexto.Usuarios.Where(u => u.Ativo == ativo && u.TipoUsuarioId == Dominio.Enumeradores.TipoUsuario.Medico || u.TipoUsuarioId == Dominio.Enumeradores.TipoUsuario.Dentista || u.TipoUsuarioId == Dominio.Enumeradores.TipoUsuario.Enfermeiro || u.TipoUsuarioId == Dominio.Enumeradores.TipoUsuario.Esteticista).ToListAsync();
+    }
+
 
     public async Task<List<Usuario>> ListarUsuarios()
     {
