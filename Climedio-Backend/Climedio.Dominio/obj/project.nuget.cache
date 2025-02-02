@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "dUKj+MN1cwM=",
+  "dgSpecHash": "G0hFwwycQ5o=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Noite\\Desktop\\Climedio.API\\Climedio-Backend\\Climedio.Dominio\\Climedio.Dominio.csproj",
+  "projectFilePath": "C:\\Users\\iurys\\OneDrive\\Área de Trabalho\\Climedio.API\\Climedio-Backend\\Climedio.Dominio\\Climedio.Dominio.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Noite\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\Noite\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\Noite\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
+    "C:\\Users\\iurys\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.33\\microsoft.netcore.app.ref.6.0.33.nupkg.sha512",
+    "C:\\Users\\iurys\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.33\\microsoft.windowsdesktop.app.ref.6.0.33.nupkg.sha512",
+    "C:\\Users\\iurys\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.33\\microsoft.aspnetcore.app.ref.6.0.33.nupkg.sha512"
   ],
   "logs": []
 }

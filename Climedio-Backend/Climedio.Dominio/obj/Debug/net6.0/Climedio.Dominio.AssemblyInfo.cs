@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Climedio.Dominio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d991926c219b7ab863fe344558f534a843548c9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8974e5172e42f678171dfd26e7fc15803f47f9d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Climedio.Dominio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Climedio.Dominio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

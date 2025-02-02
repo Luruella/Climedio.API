@@ -34,3 +34,21 @@ C:\Users\Noite\Desktop\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debu
 C:\Users\Noite\Desktop\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net6.0\refint\Climedio.Aplicacao.dll
 C:\Users\Noite\Desktop\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net6.0\Climedio.Aplicacao.pdb
 C:\Users\Noite\Desktop\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net6.0\ref\Climedio.Aplicacao.dll
+C:\Users\iurys\OneDrive\Área de Trabalho\Climedio.API\Climedio-Backend\Climedio.Aplicacao\bin\Debug\net6.0\Climedio.Aplicacao.deps.json
+C:\Users\iurys\OneDrive\Área de Trabalho\Climedio.API\Climedio-Backend\Climedio.Aplicacao\bin\Debug\net6.0\Climedio.Aplicacao.dll
+C:\Users\iurys\OneDrive\Área de Trabalho\Climedio.API\Climedio-Backend\Climedio.Aplicacao\bin\Debug\net6.0\Climedio.Aplicacao.pdb
+C:\Users\iurys\OneDrive\Área de Trabalho\Climedio.API\Climedio-Backend\Climedio.Aplicacao\bin\Debug\net6.0\Climedio.Dominio.dll
+C:\Users\iurys\OneDrive\Área de Trabalho\Climedio.API\Climedio-Backend\Climedio.Aplicacao\bin\Debug\net6.0\Climedio.Repositorio.dll
+C:\Users\iurys\OneDrive\Área de Trabalho\Climedio.API\Climedio-Backend\Climedio.Aplicacao\bin\Debug\net6.0\Climedio.Repositorio.pdb
+C:\Users\iurys\OneDrive\Área de Trabalho\Climedio.API\Climedio-Backend\Climedio.Aplicacao\bin\Debug\net6.0\Climedio.Dominio.pdb
+C:\Users\iurys\OneDrive\Área de Trabalho\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net6.0\Climedio.Aplicacao.csproj.AssemblyReference.cache
+C:\Users\iurys\OneDrive\Área de Trabalho\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net6.0\Climedio.Aplicacao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\iurys\OneDrive\Área de Trabalho\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net6.0\Climedio.Aplicacao.AssemblyInfoInputs.cache
+C:\Users\iurys\OneDrive\Área de Trabalho\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net6.0\Climedio.Aplicacao.AssemblyInfo.cs
+C:\Users\iurys\OneDrive\Área de Trabalho\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net6.0\Climedio.Aplicacao.csproj.CoreCompileInputs.cache
+C:\Users\iurys\OneDrive\Área de Trabalho\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net6.0\Climedio.Aplicacao.sourcelink.json
+C:\Users\iurys\OneDrive\Área de Trabalho\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net6.0\Climedio.41F1C2A5.Up2Date
+C:\Users\iurys\OneDrive\Área de Trabalho\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net6.0\Climedio.Aplicacao.dll
+C:\Users\iurys\OneDrive\Área de Trabalho\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net6.0\refint\Climedio.Aplicacao.dll
+C:\Users\iurys\OneDrive\Área de Trabalho\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net6.0\Climedio.Aplicacao.pdb
+C:\Users\iurys\OneDrive\Área de Trabalho\Climedio.API\Climedio-Backend\Climedio.Aplicacao\obj\Debug\net6.0\ref\Climedio.Aplicacao.dll

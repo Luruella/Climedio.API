@@ -1,35 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Noite\\Desktop\\Climedio.API\\Climedio-Backend\\Climedio.Aplicacao\\Climedio.Aplicacao.csproj": {}
+    "C:\\Users\\iurys\\OneDrive\\Área de Trabalho\\Climedio.API\\Climedio-Backend\\Climedio.Aplicacao\\Climedio.Aplicacao.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Noite\\Desktop\\Climedio.API\\Climedio-Backend\\Climedio.Aplicacao\\Climedio.Aplicacao.csproj": {
+    "C:\\Users\\iurys\\OneDrive\\Área de Trabalho\\Climedio.API\\Climedio-Backend\\Climedio.Aplicacao\\Climedio.Aplicacao.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Noite\\Desktop\\Climedio.API\\Climedio-Backend\\Climedio.Aplicacao\\Climedio.Aplicacao.csproj",
+        "projectUniqueName": "C:\\Users\\iurys\\OneDrive\\Área de Trabalho\\Climedio.API\\Climedio-Backend\\Climedio.Aplicacao\\Climedio.Aplicacao.csproj",
         "projectName": "Climedio.Aplicacao",
-        "projectPath": "C:\\Users\\Noite\\Desktop\\Climedio.API\\Climedio-Backend\\Climedio.Aplicacao\\Climedio.Aplicacao.csproj",
-        "packagesPath": "C:\\Users\\Noite\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Noite\\Desktop\\Climedio.API\\Climedio-Backend\\Climedio.Aplicacao\\obj\\",
+        "projectPath": "C:\\Users\\iurys\\OneDrive\\Área de Trabalho\\Climedio.API\\Climedio-Backend\\Climedio.Aplicacao\\Climedio.Aplicacao.csproj",
+        "packagesPath": "C:\\Users\\iurys\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\iurys\\OneDrive\\Área de Trabalho\\Climedio.API\\Climedio-Backend\\Climedio.Aplicacao\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Noite\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\iurys\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Noite\\Desktop\\Climedio.API\\Climedio-Backend\\Climedio.Repositorio\\Climedio.Repositorio.csproj": {
-                "projectPath": "C:\\Users\\Noite\\Desktop\\Climedio.API\\Climedio-Backend\\Climedio.Repositorio\\Climedio.Repositorio.csproj"
+              "C:\\Users\\iurys\\OneDrive\\Área de Trabalho\\Climedio.API\\Climedio-Backend\\Climedio.Repositorio\\Climedio.Repositorio.csproj": {
+                "projectPath": "C:\\Users\\iurys\\OneDrive\\Área de Trabalho\\Climedio.API\\Climedio-Backend\\Climedio.Repositorio\\Climedio.Repositorio.csproj"
               }
             }
           }
@@ -62,15 +60,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
+              "version": "[6.0.33, 6.0.33]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
+              "version": "[6.0.33, 6.0.33]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
+              "version": "[6.0.33, 6.0.33]"
             }
           ],
           "frameworkReferences": {
@@ -78,28 +76,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Noite\\Desktop\\Climedio.API\\Climedio-Backend\\Climedio.Dominio\\Climedio.Dominio.csproj": {
+    "C:\\Users\\iurys\\OneDrive\\Área de Trabalho\\Climedio.API\\Climedio-Backend\\Climedio.Dominio\\Climedio.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Noite\\Desktop\\Climedio.API\\Climedio-Backend\\Climedio.Dominio\\Climedio.Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\iurys\\OneDrive\\Área de Trabalho\\Climedio.API\\Climedio-Backend\\Climedio.Dominio\\Climedio.Dominio.csproj",
         "projectName": "Climedio.Dominio",
-        "projectPath": "C:\\Users\\Noite\\Desktop\\Climedio.API\\Climedio-Backend\\Climedio.Dominio\\Climedio.Dominio.csproj",
-        "packagesPath": "C:\\Users\\Noite\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Noite\\Desktop\\Climedio.API\\Climedio-Backend\\Climedio.Dominio\\obj\\",
+        "projectPath": "C:\\Users\\iurys\\OneDrive\\Área de Trabalho\\Climedio.API\\Climedio-Backend\\Climedio.Dominio\\Climedio.Dominio.csproj",
+        "packagesPath": "C:\\Users\\iurys\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\iurys\\OneDrive\\Área de Trabalho\\Climedio.API\\Climedio-Backend\\Climedio.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Noite\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\iurys\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -136,15 +132,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
+              "version": "[6.0.33, 6.0.33]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
+              "version": "[6.0.33, 6.0.33]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
+              "version": "[6.0.33, 6.0.33]"
             }
           ],
           "frameworkReferences": {
@@ -152,36 +148,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Noite\\Desktop\\Climedio.API\\Climedio-Backend\\Climedio.Repositorio\\Climedio.Repositorio.csproj": {
+    "C:\\Users\\iurys\\OneDrive\\Área de Trabalho\\Climedio.API\\Climedio-Backend\\Climedio.Repositorio\\Climedio.Repositorio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Noite\\Desktop\\Climedio.API\\Climedio-Backend\\Climedio.Repositorio\\Climedio.Repositorio.csproj",
+        "projectUniqueName": "C:\\Users\\iurys\\OneDrive\\Área de Trabalho\\Climedio.API\\Climedio-Backend\\Climedio.Repositorio\\Climedio.Repositorio.csproj",
         "projectName": "Climedio.Repositorio",
-        "projectPath": "C:\\Users\\Noite\\Desktop\\Climedio.API\\Climedio-Backend\\Climedio.Repositorio\\Climedio.Repositorio.csproj",
-        "packagesPath": "C:\\Users\\Noite\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Noite\\Desktop\\Climedio.API\\Climedio-Backend\\Climedio.Repositorio\\obj\\",
+        "projectPath": "C:\\Users\\iurys\\OneDrive\\Área de Trabalho\\Climedio.API\\Climedio-Backend\\Climedio.Repositorio\\Climedio.Repositorio.csproj",
+        "packagesPath": "C:\\Users\\iurys\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\iurys\\OneDrive\\Área de Trabalho\\Climedio.API\\Climedio-Backend\\Climedio.Repositorio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Noite\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\iurys\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Noite\\Desktop\\Climedio.API\\Climedio-Backend\\Climedio.Dominio\\Climedio.Dominio.csproj": {
-                "projectPath": "C:\\Users\\Noite\\Desktop\\Climedio.API\\Climedio-Backend\\Climedio.Dominio\\Climedio.Dominio.csproj"
+              "C:\\Users\\iurys\\OneDrive\\Área de Trabalho\\Climedio.API\\Climedio-Backend\\Climedio.Dominio\\Climedio.Dominio.csproj": {
+                "projectPath": "C:\\Users\\iurys\\OneDrive\\Área de Trabalho\\Climedio.API\\Climedio-Backend\\Climedio.Dominio\\Climedio.Dominio.csproj"
               }
             }
           }
@@ -234,15 +228,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
+              "version": "[6.0.33, 6.0.33]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
+              "version": "[6.0.33, 6.0.33]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
+              "version": "[6.0.33, 6.0.33]"
             }
           ],
           "frameworkReferences": {
@@ -250,7 +244,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
