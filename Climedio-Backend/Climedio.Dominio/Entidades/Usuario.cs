@@ -43,7 +43,7 @@ public class Usuario
 
     public string Endereco { get; set; }
 
-    public DateOnly DataNascimento { get; set; }
+    public DateTime DataNascimento { get; set; }
 
     public TipoUsuario TipoUsuarioId { get; set; }
 

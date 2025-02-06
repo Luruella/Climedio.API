@@ -14,9 +14,12 @@ namespace Climedio.Repositorio
         {
         }
 
-        public async Task<IEnumerable<Agendamento>> Listar(int id)
+        public async Task<IEnumerable<Agendamento>> ListarTodosAgendamentos(bool ativo)
         {
-            return await _contexto.Agendamentos.Where(a => a.UsuarioIdPaciente == id).ToListAsync();
+            return await _contexto.Agendamentos.Where(a => a.Ativo == ativo)
+                .Include(u => u.UsuarioPaciente )  
+                .Include(u => u.UsuarioProfissional)  
+                .ToListAsync();
         }
 
         public async Task Atualizar(Agendamento agendamento)
@@ -25,15 +28,15 @@ namespace Climedio.Repositorio
             await _contexto.SaveChangesAsync();
         }
 
-        public async Task<List<Agendamento>> ListarPorIdProfissional(int IdProfissional)
-        {
-            return await _contexto.Agendamentos.Where(x => x.UsuarioIdProfissional == IdProfissional).ToListAsync();
-        }
+        // public async Task<List<Agendamento>> ListarPorIdProfissional(int IdProfissional)
+        // {
+        //     return await _contexto.Agendamentos.Where(x => x.UsuarioIdProfissional == IdProfissional).ToListAsync();
+        // }
 
-        public async Task<List<Agendamento>> ListarPorIdPaciente(int IdPaciente)
-        {
-            return await _contexto.Agendamentos.Where(x => x.UsuarioIdPaciente == IdPaciente).ToListAsync();
-        }
+        // public async Task<List<Agendamento>> ListarPorIdPaciente(int IdPaciente)
+        // {
+        //     return await _contexto.Agendamentos.Where(x => x.UsuarioIdPaciente == IdPaciente).ToListAsync();
+        // }
         public async Task<Agendamento> ObterPorId(int id)
         {
             return await _contexto.Agendamentos.FirstOrDefaultAsync(x => x.Id == id);

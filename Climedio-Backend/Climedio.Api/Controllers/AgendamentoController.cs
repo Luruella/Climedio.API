@@ -77,36 +77,34 @@ public class AgendamentoController : ControllerBase
         }
     }
 
-    [HttpGet]
-    [Route("Listar/{id}")]
-    public async Task<IActionResult> Listar([FromRoute] int id, [FromQuery] bool ativo)
+[HttpGet]
+[Route("ListarTodosAgendamentos")]
+public async Task<IActionResult> Listar([FromQuery] bool ativo)
+{
+    try
     {
-        try
+        var listarAgendamentos = await _agendamentoAplicacao.ListarTodosAgendamentos(ativo);
+
+        List<ListarAgendamentoResponse> listaFinal = listarAgendamentos.Select(x => new ListarAgendamentoResponse()
         {
-            var listarAgendamentos = await _agendamentoAplicacao.Listar(id, ativo);
+            Id = x.Id,
+            UsuarioProfissionalNome = x.UsuarioProfissional.Nome,
+            UsuarioPacienteNome = x.UsuarioPaciente.Nome,
+            UsuarioPacienteTipo = Enum.GetName(x.UsuarioPaciente.TipoUsuarioId),
+            UsuarioProfissionalTipo = Enum.GetName(x.UsuarioProfissional.TipoUsuarioId),
+            Valor = x.Valor,
+            DataHora = x.DataHora,
+            Observacao = x.Observacao,
 
-            List<ListarAgendamentoResponse> listaFinal = listarAgendamentos.Select
-            (x => new ListarAgendamentoResponse()
-            {
-                Id = x.Id,
-                UsuarioIdProfissional = x.UsuarioIdProfissional,
-                UsuarioIdPaciente = x.UsuarioIdPaciente,
-                Valor = x.Valor,
-                Data_hora = x.DataHora,
-                Observacao = x.Observacao,
+        }).ToList();
 
-
-            }).ToList();
-
-
-
-            return Ok(listaFinal);
-        }
-        catch (Exception ex)
-        {
-            return BadRequest(ex.Message);
-        }
+        return Ok(listaFinal);
     }
+    catch (Exception ex)
+    {
+        return BadRequest(ex.Message);
+    }
+}
 
     // [HttpGet]
     // [Route("ObterPorUsuarioId/{usuarioId}")]

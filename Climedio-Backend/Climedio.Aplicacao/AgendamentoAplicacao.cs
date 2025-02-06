@@ -41,23 +41,16 @@ public class AgendamentoAplicacao : IAgendamentoAplicacao
         await _agendamentoRepositorio.Salvar(agendamento);
     }
 
-    public async Task<List<Agendamento>> Listar(int id, bool ativo)
+    public async Task<IEnumerable<Agendamento>>ListarTodosAgendamentos(bool ativo)
     {
-        var lista = await _agendamentoRepositorio.Listar(id);
-
-        var listaAgendamentos = lista.Where(x => x.Ativo == ativo).ToList();
-
-        if (listaAgendamentos.Count == 0)
+        var listaAgendamentos = await _agendamentoRepositorio.ListarTodosAgendamentos(ativo);
+        
+        if (listaAgendamentos.Count() == 0)
         {
             throw new Exception("Nenhum Agendamento foi encontrado.");
         }
 
         return listaAgendamentos;
-    }
-
-    public Task<IEnumerable<object>> ObterAgendamentosPorUsuarioId(int usuarioId)
-    {
-        throw new NotImplementedException();
     }
 
     public async Task Remover(int id)
@@ -73,6 +66,8 @@ public class AgendamentoAplicacao : IAgendamentoAplicacao
 
         await _agendamentoRepositorio.Atualizar(agendamento);
     }
+
+
 
     public void VerificarAgendamento(Agendamento agendamento)
     {

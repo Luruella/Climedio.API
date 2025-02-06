@@ -54,14 +54,27 @@ public class UsuarioAplicacao : IUsuarioAplicacao
             throw new Exception("Usuário já existe.");
         }
 
-        if (DateOnly.FromDateTime(DateTime.Now).AddYears(-18) < usuario.DataNascimento)
-        {
-            throw new Exception("Usuário deve ter pelo menos 18 anos.");
-        }
-
         await _usuarioRepositorio.Salvar(usuario);
     }
 
+    public async Task AtualizarInformacoes(Usuario usuarioAtualizar){
+        var usuario = await _usuarioRepositorio.ObterPorId(usuarioAtualizar.Id);
+
+        if (usuario == null)
+        {
+            throw new Exception("Usuário não encontrado.");
+        }
+
+        usuario.Nome = usuarioAtualizar.Nome;
+        usuario.Email = usuarioAtualizar.Email;
+        usuario.Telefone = usuarioAtualizar.Telefone;
+        usuario.Endereco = usuarioAtualizar.Endereco;
+        usuario.TipoUsuarioId = usuarioAtualizar.TipoUsuarioId;
+        usuario.Cpf = usuarioAtualizar.Cpf;
+        usuario.NomeSocial = usuarioAtualizar.NomeSocial;
+
+        await _usuarioRepositorio.Atualizar(usuario);
+    }
 
     public async Task<List<Usuario>> ListarUsuarios()
     {

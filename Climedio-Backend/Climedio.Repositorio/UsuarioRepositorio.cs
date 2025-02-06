@@ -16,6 +16,13 @@ public class UsuarioRepositorio : BaseRepositorio, IUsuarioRepositorio
         await _contexto.SaveChangesAsync();
     }
 
+    public async Task AtualizarInformacoes(Usuario usuario)
+    {
+        _contexto.Usuarios.Update(usuario);
+        await _contexto.SaveChangesAsync();
+    }
+
+
     public async Task<Usuario> ObterPorEmail(string email)
     {
         return await _contexto.Usuarios.FirstOrDefaultAsync(u => u.Email == email);

@@ -10,10 +10,11 @@ public interface IUsuarioAplicacao
     Task AtualizarSenha(int id, string senhaAntiga, string senhaNova);
     Task Remover(int id);
     Task<int> ValidarLogin(string email, string senha);
-     Task<int> ValidarCPF(string cpf, string senha);
+    Task<int> ValidarCPF(string cpf, string senha);
     Task<Usuario> ObterUsuario(int id);
     Task<List<Usuario>> ListarUsuarios();
     Task<IEnumerable<Usuario>> ListarPacientes(bool ativo);
     Task<IEnumerable<Usuario>> ListarProfissionais(bool ativo);
+    Task AtualizarInformacoes(Usuario usuarioAtualizar);
 }
 

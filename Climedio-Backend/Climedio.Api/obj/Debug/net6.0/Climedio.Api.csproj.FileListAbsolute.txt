@@ -271,3 +271,7 @@ C:\Users\iurys\OneDrive\Área de Trabalho\Climedio.API\Climedio-Backend\Climedio
 C:\Users\iurys\OneDrive\Área de Trabalho\Climedio.API\Climedio-Backend\Climedio.Api\obj\Debug\net6.0\Climedio.Api.pdb
 C:\Users\iurys\OneDrive\Área de Trabalho\Climedio.API\Climedio-Backend\Climedio.Api\obj\Debug\net6.0\Climedio.Api.genruntimeconfig.cache
 C:\Users\iurys\OneDrive\Área de Trabalho\Climedio.API\Climedio-Backend\Climedio.Api\obj\Debug\net6.0\ref\Climedio.Api.dll
+C:\Users\Noite\Desktop\Climedio.API\Climedio-Backend\Climedio.Api\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Noite\Desktop\Climedio.API\Climedio-Backend\Climedio.Api\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\Noite\Desktop\Climedio.API\Climedio-Backend\Climedio.Api\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Noite\Desktop\Climedio.API\Climedio-Backend\Climedio.Api\bin\Debug\net6.0\System.Text.Json.dll

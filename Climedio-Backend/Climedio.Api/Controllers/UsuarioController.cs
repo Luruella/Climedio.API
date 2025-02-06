@@ -97,18 +97,22 @@ public class UsuarioController : ControllerBase
     }
 
     [HttpGet]
-    [Route("ObterUsuario/{id}")]
-    public async Task<IActionResult> ObterUsuario([FromRoute] int id)
+    [Route("Obter/{usuarioId}")]
+    public async Task<IActionResult> ObterUsuarioAsync([FromRoute] int usuarioId)
     {
         try
         {
-            Usuario usuarioTeste = await _usuarioAplicacao.ObterUsuario(id);
+            Usuario usuario = await _usuarioAplicacao.ObterUsuario(usuarioId);
 
-            UsuarioResponse usuario = new UsuarioResponse();
-
-            usuario.Nome = usuarioTeste.Nome;
-            usuario.Email = usuarioTeste.Email;
-            usuario.DataNascimento = usuarioTeste.DataNascimento;
+            var usuarioAtualizar = new UsuarioAtualizarRequest(){
+                Nome = usuario.Nome,
+                Email = usuario.Email,
+                Cpf = usuario.Cpf,
+                NomeSocial = usuario.NomeSocial,
+                Telefone = usuario.Telefone,
+                Endereco = usuario.Endereco,
+                TipoUsuarioId = usuario.TipoUsuarioId
+            };
 
             return Ok(usuario);
         }
@@ -204,6 +208,33 @@ public class UsuarioController : ControllerBase
                                 .ToList();
 
             return Ok(tiposUsuario);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+
+    [HttpPut]
+    [Route("AtualizarInformacoes")]
+    public async Task<IActionResult> AtualizarInformacoes([FromBody] UsuarioAtualizarRequest usuarioAtualizar)
+    {
+        try
+        {
+            var usuario = new Usuario(usuarioAtualizar.Nome)
+            {
+                Id = usuarioAtualizar.Id,
+                Email = usuarioAtualizar.Email,
+                Cpf = usuarioAtualizar.Cpf,
+                Telefone = usuarioAtualizar.Telefone,
+                Endereco = usuarioAtualizar.Endereco,
+                NomeSocial = usuarioAtualizar.NomeSocial,
+                TipoUsuarioId = usuarioAtualizar.TipoUsuarioId
+            };
+
+            await _usuarioAplicacao.AtualizarInformacoes(usuario);
+
+            return Ok();
         }
         catch (Exception ex)
         {
