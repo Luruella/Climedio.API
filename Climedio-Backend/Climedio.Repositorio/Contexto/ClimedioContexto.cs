@@ -19,7 +19,7 @@ public class ClimedioContexto : DbContext
     }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer(@"Server=DESKTOP-SMTMUD6\SQLEXPRESS;Database=Climedio;Trusted_Connection=True;");
+        optionsBuilder.UseSqlServer(@"Server=DESKTOP-58UEHOH\MSSQLSERVER01;Database=Climedio;TrustServerCertificate=true;Trusted_Connection=True;");
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
