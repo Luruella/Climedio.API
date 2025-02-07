@@ -3,6 +3,7 @@ using System;
 using Climedio.Repositorio;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
@@ -11,43 +12,49 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Climedio.Repositorio.Migrations
 {
     [DbContext(typeof(ClimedioContexto))]
-    [Migration("20250202182315_Climedio")]
-    partial class Climedio
+    [Migration("20250207072626_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "6.0.0");
+            modelBuilder
+                .HasAnnotation("ProductVersion", "6.0.0")
+                .HasAnnotation("Relational:MaxIdentifierLength", 128);
+
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
             modelBuilder.Entity("Climedio.Dominio.Entidades.Agendamento", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER")
+                        .HasColumnType("int")
                         .HasColumnName("AgendamentoId");
 
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
                     b.Property<bool>("Ativo")
-                        .HasColumnType("INTEGER")
+                        .HasColumnType("bit")
                         .HasColumnName("Ativo");
 
                     b.Property<DateTime>("DataHora")
-                        .HasColumnType("TEXT")
+                        .HasColumnType("datetime2")
                         .HasColumnName("DataHora");
 
                     b.Property<string>("Observacao")
-                        .HasColumnType("TEXT")
+                        .HasColumnType("nvarchar(max)")
                         .HasColumnName("Observacao");
 
                     b.Property<int>("UsuarioIdPaciente")
-                        .HasColumnType("INTEGER")
+                        .HasColumnType("int")
                         .HasColumnName("UsuarioIdPaciente");
 
                     b.Property<int>("UsuarioIdProfissional")
-                        .HasColumnType("INTEGER")
+                        .HasColumnType("int")
                         .HasColumnName("UsuarioIdProfissional");
 
                     b.Property<decimal>("Valor")
-                        .HasColumnType("TEXT")
+                        .HasColumnType("decimal(18,2)")
                         .HasColumnName("Valor");
 
                     b.HasKey("Id");
@@ -63,15 +70,17 @@ namespace Climedio.Repositorio.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER")
+                        .HasColumnType("int")
                         .HasColumnName("UsuarioID");
 
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
                     b.Property<bool>("Ativo")
-                        .HasColumnType("INTEGER")
+                        .HasColumnType("bit")
                         .HasColumnName("Ativo");
 
                     b.Property<string>("Cpf")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("DataNascimento")
                         .HasColumnType("date")
@@ -80,32 +89,32 @@ namespace Climedio.Repositorio.Migrations
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasMaxLength(130)
-                        .HasColumnType("TEXT")
+                        .HasColumnType("nvarchar(130)")
                         .HasColumnName("Email");
 
                     b.Property<string>("Endereco")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasMaxLength(80)
-                        .HasColumnType("TEXT")
+                        .HasColumnType("nvarchar(80)")
                         .HasColumnName("Nome");
 
                     b.Property<string>("NomeSocial")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Senha")
                         .IsRequired()
                         .HasMaxLength(64)
-                        .HasColumnType("TEXT")
+                        .HasColumnType("nvarchar(64)")
                         .HasColumnName("Senha");
 
                     b.Property<string>("Telefone")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("TipoUsuarioId")
-                        .HasColumnType("INTEGER")
+                        .HasColumnType("int")
                         .HasColumnName("TipoUsuario");
 
                     b.HasKey("Id");

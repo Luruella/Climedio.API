@@ -10,7 +10,7 @@ builder.Services.AddControllers();
 
 // Adicione o DbContext, que deve ser sua classe que herda de DbContext (ClimedioContexto)
 builder.Services.AddDbContext<ClimedioContexto>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Registre as interfaces e implementações
 builder.Services.AddScoped<IUsuarioAplicacao, UsuarioAplicacao>();

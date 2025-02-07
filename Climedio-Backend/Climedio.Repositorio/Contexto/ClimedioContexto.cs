@@ -19,7 +19,7 @@ public class ClimedioContexto : DbContext
     }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlite(@"Filename=C:\Users\Noite\Desktop\Climedio.API\Climedio-Backend\Climedio.Repositorio\Climedio.sqlite");
+        optionsBuilder.UseSqlServer(@"Server=DESKTOP-SMTMUD6\SQLEXPRESS;Database=Climedio;Trusted_Connection=True;");
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

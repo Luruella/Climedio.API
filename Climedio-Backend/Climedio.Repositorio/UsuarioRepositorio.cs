@@ -1,4 +1,5 @@
 using Climedio.Dominio.Entidades;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
 namespace Climedio.Repositorio;
@@ -61,6 +62,10 @@ public class UsuarioRepositorio : BaseRepositorio, IUsuarioRepositorio
 
     public async Task<List<Usuario>> ListarUsuarios()
     {
-        return await _contexto.Usuarios.Where(u => u.Ativo == true).ToListAsync();
+        //return await _contexto.Usuarios.Where(u => u.Ativo == true).ToListAsync();
+
+        return await _contexto.Usuarios
+        .FromSqlRaw("EXEC ListarUsuarios")
+        .ToListAsync();
     }
 }

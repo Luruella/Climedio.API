@@ -80,6 +80,7 @@ public class UsuarioAplicacao : IUsuarioAplicacao
     {
         return await _usuarioRepositorio.ListarUsuarios();
     }
+    
 
 
     public async Task<IEnumerable<Usuario>> ListarPacientes(bool ativo)
